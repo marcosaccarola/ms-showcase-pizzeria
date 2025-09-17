@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Menu - Pizzeria da Tony">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-red-600 to-red-700 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Le Nostre Pizze
+      </h1>
+      <p class="text-xl text-red-100 mb-8">
+        Pizze autentiche cotte nel forno a legna con ingredienti freschi
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+390498021534" class="bg-yellow-400 hover:bg-yellow-500 text-red-800 font-semibold py-3 px-8 rounded-lg transition-colors">
+          📞 Ordina per Telefono
+        </a>
+        <a href="https://wa.me/390498021534?text=Ciao! Vorrei ordinare dal vostro menu." class="border-2 border-white hover:bg-white hover:text-red-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          💬 Ordina su WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-lg p-8 shadow-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+        
+        <!-- PIADINA / con POMODORINI -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">PIADINA / con POMODORINI</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€3,50 - €5,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Olio, sale, origano</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- MARINARA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">MARINARA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€4,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, aglio, origano</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- MARGHERITA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">MARGHERITA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€5,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- ROMANA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">ROMANA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€6,50</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, acciughe</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- NAPOLETANA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">NAPOLETANA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€7,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, acciughe, capperi</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- PUGLIESE -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">PUGLIESE</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€6,50</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, cipolla</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- DIAVOLA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">DIAVOLA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€6,50</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, salamino piccante</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- VIENNESE -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">VIENNESE</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€6,50</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, wurstel</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- SICILIANA -->
+        <div class="bg-white shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">SICILIANA</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€8,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Pomodoro, mozzarella, peperoni, olive nere, capperi</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+        </div>
+
+        <!-- TONY -->
+        <div class="bg-gradient-to-br from-red-50 to-yellow-50 shadow-md p-4 hover:shadow-xl transition-shadow duration-300 border-2 border-red-200 border-b-2 border-gray-500 last:border-b-0">
+          <div class="flex justify-between items-start mb-1">
+            <h3 class="text-xl font-semibold text-gray-800">TONY</h3>
+            <div class="flex items-center">
+              <div class="w-12 h-px bg-gray-400 mr-2"></div>
+              <span class="text-red-600 font-bold text-lg">€10,00</span>
+            </div>
+          </div>
+          <div class="flex justify-between items-start mb-3">
+            <p class="text-gray-600">Panna, gorgonzola, mozzarella, speck</p>
+            <div class="w-16 h-px bg-gray-300"></div>
+          </div>
+          <div class="mt-2">
+            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-sm">Specialità</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Pronto per ordinare?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Chiamaci o scrivici su WhatsApp per il tuo ordine d'asporto
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+390498021534" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          📞 049 8021534
+        </a>
+        <a href="https://wa.me/390498021534" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
