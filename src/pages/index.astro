@@ -1,16 +1,93 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Pizzeria Marco - Tradizione Italiana dal 1985">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-red-600 to-red-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Benvenuti alla <span class="text-yellow-300">Pizzeria Marco</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-red-100">
+          Tradizione italiana dal 1985. Pizze autentiche con ingredienti freschi e ricette tramandate di generazione in generazione.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/menu" class="bg-yellow-400 hover:bg-yellow-500 text-red-800 font-semibold py-3 px-8 rounded-lg transition-colors">
+            Vedi il Menu
+          </a>
+          <a href="/contatti" class="border-2 border-white hover:bg-white hover:text-red-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+            Prenota un Tavolo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Perché scegliere la nostra pizzeria?
+        </h2>
+        <p class="text-lg text-gray-600">
+          La passione per la tradizione italiana si sente in ogni boccone
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🍅</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Ingredienti Freschi</h3>
+          <p class="text-gray-600">
+            Utilizziamo solo ingredienti freschi e di qualità, selezionati dai migliori fornitori locali.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">👨‍🍳</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Ricette Tradizionali</h3>
+          <p class="text-gray-600">
+            Le nostre ricette sono tramandate di generazione in generazione, mantenendo l'autenticità italiana.
+          </p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🔥</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Forno a Legna</h3>
+          <p class="text-gray-600">
+            Le nostre pizze vengono cotte nel forno a legna tradizionale per un sapore unico e autentico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Pronto per un'esperienza culinaria indimenticabile?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Prenota il tuo tavolo o ordina per l'asporto. Ti aspettiamo!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+390612345678" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          📞 Chiama Ora
+        </a>
+        <a href="https://wa.me/390612345678" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
