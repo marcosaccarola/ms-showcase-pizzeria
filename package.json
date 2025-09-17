@@ -1,12 +1,20 @@
 {
   "name": "ms-showcase-pizzeria",
+  "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Sito vetrina per pizzeria",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.13.8",
+    "tailwindcss": "^4.1.13"
+  },
+  "keywords": ["pizzeria", "showcase", "astro", "tailwind"],
+  "author": "Marco Saccarola",
+  "license": "MIT"
 }

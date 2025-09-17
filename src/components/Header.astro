@@ -1,0 +1,88 @@
+---
+// Header component per la pizzeria
+---
+
+<header class="bg-white shadow-lg sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16 md:h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <div class="w-10 h-10 md:w-12 md:h-12 bg-red-600 rounded-full flex items-center justify-center">
+            <span class="text-white font-bold text-lg md:text-xl">🍕</span>
+          </div>
+          <span class="ml-3 text-xl md:text-2xl font-bold text-gray-900">
+            Pizzeria <span class="text-red-600">Marco</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="/" class="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors">
+          Home
+        </a>
+        <a href="/menu" class="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors">
+          Menu
+        </a>
+        <a href="/chi-siamo" class="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors">
+          Chi Siamo
+        </a>
+        <a href="/contatti" class="text-gray-700 hover:text-red-600 px-3 py-2 text-sm font-medium transition-colors">
+          Contatti
+        </a>
+      </nav>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button 
+          type="button" 
+          class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-red-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Apri menu principale</span>
+          <!-- Hamburger icon -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        <a href="/" class="text-gray-700 hover:text-red-600 block px-3 py-2 text-base font-medium">
+          Home
+        </a>
+        <a href="/menu" class="text-gray-700 hover:text-red-600 block px-3 py-2 text-base font-medium">
+          Menu
+        </a>
+        <a href="/chi-siamo" class="text-gray-700 hover:text-red-600 block px-3 py-2 text-base font-medium">
+          Chi Siamo
+        </a>
+        <a href="/contatti" class="text-gray-700 hover:text-red-600 block px-3 py-2 text-base font-medium">
+          Contatti
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
